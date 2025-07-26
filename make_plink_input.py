@@ -164,4 +164,5 @@ fam_df.to_csv(
 # make binary input files, with MAF filter of 0.05
 plink2   --vcf plink_input/example_data.vcf   --maf 0.05 --fam plink_input/example_data.fam   --make-bed   --out plink_input/example_data_maf05
 
-# run 
+# run logistic regression
+plink2   --bfile plink_input/example_data_maf05   --logistic hide-covar allow-no-covars  --out plink_output/example_data_plink_maf05
