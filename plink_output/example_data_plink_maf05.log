@@ -1,14 +1,15 @@
 PLINK v2.00a5.12 SSE4.2 (25 Jun 2024)
 Options in effect:
+  --adjust
   --bfile plink_input/example_data_maf05
   --glm hide-covar allow-no-covars
   --out plink_output/example_data_plink_maf05
 
 Hostname: Mikes-MacBook-Pro.local
 Working directory: /Users/mikesaint-antoine/Desktop/gwas_workshop
-Start time: Fri Jul 25 22:12:00 2025
+Start time: Fri Jul 25 22:33:39 2025
 
-Random number seed: 1753495920
+Random number seed: 1753497219
 16384 MiB RAM detected; reserving 8192 MiB for main workspace.
 Using up to 8 compute threads.
 200 samples (0 females, 0 males, 200 ambiguous; 200 founders) loaded from
@@ -18,5 +19,9 @@ plink_input/example_data_maf05.fam.
 Calculating allele frequencies... done.
 --glm logistic-Firth hybrid regression on phenotype 'PHENO1': done.
 Results written to plink_output/example_data_plink_maf05.PHENO1.glm.logistic.hybrid .
+--adjust: Genomic inflation est. lambda (based on median chisq) = 0.999105.
+(Treating lambda as 1 in GC-corrected p-value calculation.)
+--adjust values (43908 tests) written to
+plink_output/example_data_plink_maf05.PHENO1.glm.logistic.hybrid.adjusted .
 
-End time: Fri Jul 25 22:12:00 2025
+End time: Fri Jul 25 22:33:39 2025
